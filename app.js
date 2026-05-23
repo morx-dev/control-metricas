@@ -1,5 +1,5 @@
 // CONFIGURACIÓN: Aquí pondrás la URL con HTTPS que te dará Render al desplegar tu Web Service de Node.js
-const BACKEND_URL = "https://TU-BACKEND-DEPLOYADO.onrender.com"; 
+const BACKEND_URL = "https://control-metricas.onrender.com"; 
 
 document.addEventListener("DOMContentLoaded", () => {
     const btnRefresh = document.getElementById("btn-refresh");
