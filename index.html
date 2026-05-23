@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSOO2 - Monitor Cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Sistema de Monitoreo de Recursos</h1>
+            <p class="subtitle">Arquitectura de 2 Capas: GitHub Pages + Render DB</p>
+        </header>
+
+        <section class="status-panel">
+            <div class="status-card">
+                <h3>Estado de Conexión</h3>
+                <span id="connection-status" class="badge loading">Conectando...</span>
+            </div>
+            <div class="status-card">
+                <h3>Última Actualización</h3>
+                <span id="last-update">--:--:--</span>
+            </div>
+        </section>
+
+        <main class="data-section">
+            <div class="table-actions">
+                <h2>Historial de Métricas</h2>
+                <button id="btn-refresh" class="btn-primary">🔄 Actualizar Datos</button>
+            </div>
+            
+            <div class="table-container">
+                <table id="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Dispositivo / Recurso</th>
+                            <th>Métrica / Valor</th>
+                            <th>Estado</th>
+                            <th>Fecha y Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="metrics-body">
+                        <tr>
+                            <td colspan="5" class="text-center">Cargando registros desde la nube...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
